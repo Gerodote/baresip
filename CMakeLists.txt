@@ -28,7 +28,8 @@ else()
 endif()
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
-
+include(${CMAKE_CURRENT_LIST_DIR}/cmake_not_module_path/getCPM.cmake)
+CPMAddPackage("gh:TheLartians/PackageProject.cmake@1.11.2")
 ##############################################################################
 #
 # Module/Package Includes
@@ -352,7 +353,20 @@ endif()
 # Install section
 #
 
-install(TARGETS baresip_exe baresip
+packageProject(
+  NAME ${PROJECT_NAME}
+  VERSION ${PROJECT_VERSION}
+  NAMESPACE ${PROJECT_NAME}
+  BINARY_DIR ${PROJECT_BINARY_DIR}
+  INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include
+  INCLUDE_DESTINATION include/${PROJECT_NAME}-${PROJECT_VERSION}
+  VERSION_HEADER "${VERSION_HEADER_LOCATION}"
+  COMPATIBILITY SameMajorVersion
+  DEPENDENCIES baresip
+  # DEPENDENCIES "fmt 9.1.0"
+)
+
+install(TARGETS baresip_exe 
   RUNTIME
     DESTINATION ${CMAKE_INSTALL_BINDIR}
     COMPONENT Applications
@@ -377,13 +391,13 @@ if(NOT STATIC)
     )
   endforeach()
 endif()
-
-install(TARGETS baresip
-  LIBRARY
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    NAMELINK_ONLY
-    COMPONENT Development
-)
+#
+# install(TARGETS baresip
+#   LIBRARY
+#     DESTINATION ${CMAKE_INSTALL_LIBDIR}
+#     NAMELINK_ONLY
+#     COMPONENT Development
+# )
 
 file(GLOB SHARE_FILES "${PROJECT_SOURCE_DIR}/share/*")
 
