@@ -98,7 +98,7 @@ else()
 endif()
 
 CPMAddPackage(NAME re GIT_TAG main GIT_REPOSITORY
-  https://github.com/baresip/re.git )
+  https://github.com/Gerodote/re_cpm.git )
 
 find_package(PkgConfig REQUIRED)
 
@@ -262,7 +262,12 @@ endif()
 # Main target library
 #
 
-set(LINKLIBS ${RE_LIBRARIES} ${RE_LIBS})
+# # set(LINKLIBS ${RE_LIBRARIES} ${RE_LIBS})
+# if(TARGET libre) 
+# list(APPEND LINKLIBS libre)
+# else()
+# list(APPEND LINKLIBS libre-shared)
+# endif()
 
 if(WIN32)
   list(APPEND LINKLIBS winmm gdi32 crypt32 strmiids ole32 oleaut32)
@@ -288,7 +293,7 @@ set_target_properties(baresip PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
 set_target_properties(baresip PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
-
+target_link_libraries(baresip PUBLIC re)
 ##############################################################################
 #
 # Target baresip executable
@@ -365,7 +370,7 @@ packageProject(
   INCLUDE_DESTINATION include/${PROJECT_NAME}-${PROJECT_VERSION}
   VERSION_HEADER "${VERSION_HEADER_LOCATION}"
   COMPATIBILITY SameMajorVersion
-  DEPENDENCIES baresip
+  DEPENDENCIES re
   # DEPENDENCIES "fmt 9.1.0"
 )
 

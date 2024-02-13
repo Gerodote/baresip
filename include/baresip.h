@@ -11,6 +11,7 @@
 extern "C" {
 #endif
 
+#include "re/re.h"
 
 /** Defines the Baresip version string */
 #define BARESIP_VERSION "3.9.0"
