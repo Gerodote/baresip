@@ -276,7 +276,7 @@ endif()
 if(STATIC)
   add_library(baresip STATIC ${SRCS} ${HEADERS})
   target_link_libraries(baresip PUBLIC ${LINKLIBS} ${MODULES_DETECTED})
-  target_include_directories(baresip PUBLIC include)
+  # target_include_directories(baresip PUBLIC include)
 else()
   add_library(baresip SHARED ${SRCS} ${HEADERS})
   target_link_libraries(baresip PRIVATE ${LINKLIBS})
@@ -288,6 +288,13 @@ endif()
 if(MSVC)
   set_target_properties(baresip PROPERTIES OUTPUT_NAME "libbaresip")
 endif()
+
+# add_library(baresip ${srcs} ${headers})
+# target_link_libraries(baresip public ${linklibs} ${modules_detected})
+target_include_directories(
+  ${PROJECT_NAME} PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
+                         $<INSTALL_INTERFACE:include/${PROJECT_NAME}-${PROJECT_VERSION}>
+)
 
 set_target_properties(baresip PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
