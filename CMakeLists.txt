@@ -37,7 +37,7 @@ CPMAddPackage("gh:TheLartians/PackageProject.cmake@1.11.2")
 
 include(GNUInstallDirs)
 include(CheckIncludeFile)
-find_package(RE REQUIRED)
+# find_package(RE REQUIRED)
 
 ##############################################################################
 #
@@ -97,9 +97,12 @@ else()
   )
 endif()
 
+CPMAddPackage(NAME re GIT_TAG main GIT_REPOSITORY
+  https://github.com/baresip/re.git )
 
+find_package(PkgConfig REQUIRED)
 
-find_package(re CONFIG REQUIRED HINTS ../re/cmake)
+# find_package(re CONFIG REQUIRED HINTS ../re/cmake)
 
 list(APPEND RE_DEFINITIONS
   VERSION="${PROJECT_VERSION_FULL}"
