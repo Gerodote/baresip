@@ -19,3 +19,4 @@ endif()
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${MOSQUITTO_INCLUDE_DIR})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${MOSQUITTO_LIBRARY})
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

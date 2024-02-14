@@ -5,8 +5,8 @@
  */
 #include <string.h>
 #include <stdlib.h>
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include "test.h"
 #include "../src/core.h"  /* NOTE: temp */

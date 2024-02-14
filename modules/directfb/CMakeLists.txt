@@ -19,3 +19,4 @@ endif()
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${DIRECTFB_INCLUDE_DIR})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${DIRECTFB_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

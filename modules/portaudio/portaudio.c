@@ -6,8 +6,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <portaudio.h>
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 
 

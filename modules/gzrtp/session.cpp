@@ -5,7 +5,7 @@
  */
 #include <stdint.h>
 
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 
 #include "session.h"

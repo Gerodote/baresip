@@ -5,7 +5,7 @@
  */
 #include <string.h>
 #include <time.h>
-#include <re.h>
+#include <re/re.h>
 #include "sipsrv.h"
 
 

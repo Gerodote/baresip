@@ -28,3 +28,4 @@ target_compile_options(${PROJECT_NAME} PRIVATE
     -Wno-pedantic
     -Wno-missing-field-initializers
 )
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

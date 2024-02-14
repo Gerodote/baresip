@@ -4,7 +4,7 @@
  * Copyright (C) 2010 - 2017 Alfred E. Heggestad
  */
 
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include "test.h"
 #include "../modules/menu/menu.h"
@@ -13,7 +13,7 @@
 
 #define DEBUG_MODULE "menu"
 #define DEBUG_LEVEL 5
-#include <re_dbg.h>
+#include <re/re_dbg.h>
 
 int test_clean_number(void)
 {

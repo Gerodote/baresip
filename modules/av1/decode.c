@@ -5,9 +5,9 @@
  */
 
 #include <string.h>
-#include <re.h>
-#include <re_av1.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/re_av1.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include <aom/aom.h>
 #include <aom/aom_decoder.h>

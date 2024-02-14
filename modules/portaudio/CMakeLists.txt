@@ -19,3 +19,4 @@ endif()
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${PORTAUDIO_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${PORTAUDIO_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

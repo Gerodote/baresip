@@ -3,8 +3,8 @@
  *
  * Copyright (C) 2010 - 2015 Alfred E. Heggestad
  */
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include "vidinfo.h"
 #include "xga_font_data.h"

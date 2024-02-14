@@ -28,3 +28,4 @@ target_compile_options(${PROJECT_NAME} PRIVATE
   -Wno-unused-parameter
 )
 target_link_options(${PROJECT_NAME} PRIVATE -lstdc++)
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

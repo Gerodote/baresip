@@ -4,8 +4,8 @@
  * Copyright (C) 2016 Symonics GmbH
  */
 
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include <twolame.h>
 #include <lame/lame.h>

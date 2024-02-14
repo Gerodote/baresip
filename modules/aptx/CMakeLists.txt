@@ -19,3 +19,4 @@ endif()
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${APTX_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${APTX_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

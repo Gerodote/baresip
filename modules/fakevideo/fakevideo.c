@@ -8,9 +8,9 @@
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>
 #endif
-#include <re_atomic.h>
-#include <re.h>
-#include <rem.h>
+#include <re/re_atomic.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 
 

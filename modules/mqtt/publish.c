@@ -5,7 +5,7 @@
  */
 
 #include <mosquitto.h>
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include "mqtt.h"
 

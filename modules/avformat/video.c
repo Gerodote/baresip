@@ -7,9 +7,9 @@
  *     and Divus GmbH <developer@divus.eu>
  */
 
-#include <re_atomic.h>
-#include <re.h>
-#include <rem.h>
+#include <re/re_atomic.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include <libavformat/avformat.h>
 #include <libavcodec/avcodec.h>

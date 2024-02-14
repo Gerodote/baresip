@@ -4,8 +4,8 @@
  * Copyright (C) 2010 Alfred E. Heggestad
  * Copyright (C) 2013 Andreas Shimokawa <andi@fischlustig.de>
  */
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include <directfb.h>
 

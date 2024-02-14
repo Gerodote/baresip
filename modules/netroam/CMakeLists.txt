@@ -18,3 +18,4 @@ else()
 endif()
 
 target_compile_options(${PROJECT_NAME} PRIVATE -DADD_NETLINK)
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

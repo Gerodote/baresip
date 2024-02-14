@@ -5,8 +5,8 @@
  * Copyright (C) 2022 Commend.com - c.spielberger@commend.com
  */
 
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 
 

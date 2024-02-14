@@ -41,3 +41,4 @@ add_custom_target(baresipbus_c ALL
     ${CMAKE_CURRENT_SOURCE_DIR}/com.github.Baresip.xml
   DEPENDS com.github.Baresip.xml
   BYPRODUCTS baresipbus.c baresipbus.h)
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

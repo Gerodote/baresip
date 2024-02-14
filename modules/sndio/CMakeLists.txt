@@ -16,3 +16,4 @@ else()
 endif()
 
 target_link_libraries(${PROJECT_NAME} PRIVATE -lsndio)
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

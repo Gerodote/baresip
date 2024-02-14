@@ -5,7 +5,7 @@
  */
 
 #include <syslog.h>
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 
 
@@ -18,7 +18,7 @@
 
 #define DEBUG_MODULE ""
 #define DEBUG_LEVEL 0
-#include <re_dbg.h>
+#include <re/re_dbg.h>
 
 
 static const int lmap[] = { LOG_DEBUG, LOG_INFO, LOG_WARNING, LOG_ERR };

@@ -6,7 +6,7 @@
  */
 
 #include <strings.h>
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include <fdk-aac/FDK_audio.h>
 #include "aac.h"

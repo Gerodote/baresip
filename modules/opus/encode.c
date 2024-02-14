@@ -4,8 +4,8 @@
  * Copyright (C) 2010 Alfred E. Heggestad
  */
 
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include <opus/opus.h>
 #include "opus.h"

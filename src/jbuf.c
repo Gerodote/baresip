@@ -8,14 +8,14 @@
  */
 #include <string.h>
 #include <stdint.h>
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 
 #include <stdlib.h>
 
 #define DEBUG_MODULE "jbuf"
 #define DEBUG_LEVEL 5
-#include <re_dbg.h>
+#include <re/re_dbg.h>
 
 
 #ifndef RELEASE

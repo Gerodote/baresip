@@ -13,7 +13,7 @@
 #include <sys/socket.h>
 #include <linux/netlink.h>
 #include <linux/rtnetlink.h>
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include "netlink.h"
 

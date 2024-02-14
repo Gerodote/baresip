@@ -19,3 +19,4 @@ endif()
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${PULSE_INCLUDE_DIR})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${PULSE_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

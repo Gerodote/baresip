@@ -15,15 +15,15 @@
 #include <io.h>
 #endif
 #include <string.h>
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include "core.h"
 
 
 #define DEBUG_MODULE ""
 #define DEBUG_LEVEL 0
-#include <re_dbg.h>
+#include <re/re_dbg.h>
 
 
 #ifdef WIN32

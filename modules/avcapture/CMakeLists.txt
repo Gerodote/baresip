@@ -21,3 +21,4 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
   "-framework CoreVideo"
   "-framework AVFoundation"
 )
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

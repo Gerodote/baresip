@@ -6,9 +6,9 @@
 #define _DEFAULT_SOURCE 1
 #define _BSD_SOURCE 1
 #include <string.h>
-#include <re_atomic.h>
-#include <re.h>
-#include <rem.h>
+#include <re/re_atomic.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include "aufile.h"
 

@@ -8,8 +8,8 @@
 #define _BSD_SOURCE 1
 #include <string.h>
 #include <png.h>
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include "png_vf.h"
 

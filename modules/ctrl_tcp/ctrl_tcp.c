@@ -4,7 +4,7 @@
  * Copyright (C) 2018 46 Labs LLC
  */
 
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 
 #include "tcp_netstring.h"

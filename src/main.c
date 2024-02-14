@@ -10,12 +10,12 @@
 #ifdef HAVE_GETOPT
 #include <getopt.h>
 #endif
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 
 #define DEBUG_MODULE ""
 #define DEBUG_LEVEL 0
-#include <re_dbg.h>
+#include <re/re_dbg.h>
 
 enum { ASYNC_WORKERS = 4 };
 

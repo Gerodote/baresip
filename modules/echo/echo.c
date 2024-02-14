@@ -1,7 +1,7 @@
 /**
  * @file echo.c Echo module
  */
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 
 /**

@@ -4,8 +4,8 @@
  * Copyright (C) 2010 - 2016 Alfred E. Heggestad
  */
 #include <string.h>
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include "vp9.h"
 

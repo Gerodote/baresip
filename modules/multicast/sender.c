@@ -4,8 +4,8 @@
  * Copyright (C) 2021 Commend.com - c.huber@commend.com
  */
 
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 
 #include <stdlib.h>
@@ -14,7 +14,7 @@
 
 #define DEBUG_MODULE "mcsend"
 #define DEBUG_LEVEL 6
-#include <re_dbg.h>
+#include <re/re_dbg.h>
 
 
 static struct list mcsenderl = LIST_INIT;

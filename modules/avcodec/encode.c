@@ -6,10 +6,10 @@
  *     Media Magic Technologies <developer@mediamagictechnologies.com>
  *     and Divus GmbH <developer@divus.eu>
  */
-#include <re.h>
-#include <re_h264.h>
-#include <re_h265.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/re_h264.h>
+#include <re/re_h265.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include <libavcodec/avcodec.h>
 #include <libavutil/mem.h>

@@ -4,15 +4,15 @@
  * Copyright (C) 2021 Commend.com - c.huber@commend.com
  */
 
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 
 #include "multicast.h"
 
 #define DEBUG_MODULE "mcreceiver"
 #define DEBUG_LEVEL 6
-#include <re_dbg.h>
+#include <re/re_dbg.h>
 
 
 struct list mcreceivl = LIST_INIT;

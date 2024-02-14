@@ -4,7 +4,7 @@
  * Copyright (C) 2019 Alfred E. Heggestad
  */
 
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include <opus/opus_multistream.h>
 #include "opus_multistream.h"

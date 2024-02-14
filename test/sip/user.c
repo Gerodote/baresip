@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2010 - 2016 Alfred E. Heggestad
  */
-#include <re.h>
+#include <re/re.h>
 #include "sipsrv.h"
 
 

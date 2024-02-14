@@ -3,8 +3,8 @@
  *
  * Copyright (C) 2010 Alfred E. Heggestad
  */
-#include <re.h>
-#include <re_atomic.h>
+#include <re/re.h>
+#include <re/re_atomic.h>
 #include <baresip.h>
 #include "sdes.h"
 

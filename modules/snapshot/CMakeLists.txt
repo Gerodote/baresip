@@ -25,3 +25,4 @@ endif()
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${PNG_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${PNG_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

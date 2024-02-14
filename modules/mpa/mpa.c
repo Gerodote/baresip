@@ -4,7 +4,7 @@
  * Copyright (C) 2016 Symonics GmbH
  */
 
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include <ctype.h>
 #include <string.h>

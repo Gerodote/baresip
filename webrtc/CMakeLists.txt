@@ -37,4 +37,5 @@ add_executable(${PROJECT_NAME}
   src/sess.c
 )
 
-target_link_libraries(${PROJECT_NAME} baresip ${RE_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} baresip)
+target_link_libraries(${PROJECT_NAME} re)

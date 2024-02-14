@@ -8,8 +8,8 @@
 #endif
 #include <stdlib.h>
 #include <string.h>
-#include <re.h>
-#include <rem_au.h>
+#include <re/re.h>
+#include <re/rem_au.h>
 #include <baresip.h>
 #define SPANDSP_EXPOSE_INTERNAL_STRUCTURES 1
 #include <spandsp.h>

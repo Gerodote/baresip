@@ -5,9 +5,9 @@
  */
 #include <string.h>
 #include <stdlib.h>
-#include <re.h>
-#include <re_atomic.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/re_atomic.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include "core.h"
 

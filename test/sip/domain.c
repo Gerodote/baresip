@@ -3,13 +3,13 @@
  *
  * Copyright (C) 2010 - 2016 Alfred E. Heggestad
  */
-#include <re.h>
+#include <re/re.h>
 #include "sipsrv.h"
 
 
 #define DEBUG_MODULE "mock/sipsrv"
 #define DEBUG_LEVEL 5
-#include <re_dbg.h>
+#include <re/re_dbg.h>
 
 
 enum {

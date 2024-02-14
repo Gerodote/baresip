@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include "menu.h"
 

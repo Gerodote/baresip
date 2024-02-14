@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2015 Charles E. Lehner
  */
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include <gtk/gtk.h>
 #include "gtk_mod.h"

@@ -6,9 +6,9 @@
  */
 
 #include <stdio.h>
-#include <re.h>
+#include <re/re.h>
 extern "C" {
-  #include <rem_video.h>
+  #include <re/rem_video.h>
 }
 #include <baresip.h>
 #include <commctrl.h>

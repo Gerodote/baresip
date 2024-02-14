@@ -25,3 +25,4 @@ target_compile_options(${PROJECT_NAME} PRIVATE
   -Wno-pedantic
   -D_GNU_SOURCE
 )
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

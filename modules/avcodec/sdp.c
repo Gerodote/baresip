@@ -7,7 +7,7 @@
  *     and Divus GmbH <developer@divus.eu>
  */
 
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include <libavcodec/avcodec.h>
 #include "avcodec.h"

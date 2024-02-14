@@ -276,7 +276,6 @@ endif()
 if(STATIC)
   add_library(baresip STATIC ${SRCS} ${HEADERS})
   target_link_libraries(baresip PUBLIC ${LINKLIBS} ${MODULES_DETECTED})
-  # target_include_directories(baresip PUBLIC include)
 else()
   add_library(baresip SHARED ${SRCS} ${HEADERS})
   target_link_libraries(baresip PRIVATE ${LINKLIBS})
@@ -290,17 +289,19 @@ if(MSVC)
 endif()
 
 # add_library(baresip ${srcs} ${headers})
-# target_link_libraries(baresip public ${linklibs} ${modules_detected})
+# target_link_libraries(baresip PUBLIC ${LINKLIBS} ${MODULES_DETECTED})
 target_include_directories(
   ${PROJECT_NAME} PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
                          $<INSTALL_INTERFACE:include/${PROJECT_NAME}-${PROJECT_VERSION}>
 )
+
 
 set_target_properties(baresip PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
 set_target_properties(baresip PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
 target_link_libraries(baresip PUBLIC re)
+
 ##############################################################################
 #
 # Target baresip executable
@@ -310,7 +311,7 @@ add_executable(baresip_exe src/main.c)
 
 set_target_properties(baresip_exe PROPERTIES OUTPUT_NAME baresip)
 
-target_link_libraries(baresip_exe PRIVATE baresip ${LINKLIBS})
+target_link_libraries(baresip_exe PRIVATE baresip )
 
 ##############################################################################
 #
@@ -378,7 +379,6 @@ packageProject(
   VERSION_HEADER "${VERSION_HEADER_LOCATION}"
   COMPATIBILITY SameMajorVersion
   DEPENDENCIES re
-  # DEPENDENCIES "fmt 9.1.0"
 )
 
 install(TARGETS baresip_exe 

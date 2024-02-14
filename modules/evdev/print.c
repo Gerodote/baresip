@@ -10,7 +10,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <linux/input.h>
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include "print.h"
 

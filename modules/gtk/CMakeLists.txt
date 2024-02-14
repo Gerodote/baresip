@@ -25,3 +25,4 @@ target_compile_options(${PROJECT_NAME} PRIVATE
     -Wno-strict-prototypes
     -Wno-deprecated-declarations
 )
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

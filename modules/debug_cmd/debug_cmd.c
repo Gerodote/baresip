@@ -9,8 +9,8 @@
 #ifdef USE_OPENSSL
 #include <openssl/crypto.h>
 #endif
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 
 

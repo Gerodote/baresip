@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <termios.h>
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 
 

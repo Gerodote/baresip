@@ -7,8 +7,8 @@
 #ifndef WIN32
 #include <dirent.h>
 #endif
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include "core.h"
 

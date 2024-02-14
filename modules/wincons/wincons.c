@@ -5,7 +5,7 @@
  */
 
 #include <winsock2.h>
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 
 

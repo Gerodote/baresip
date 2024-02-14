@@ -3,10 +3,10 @@
  *
  * Copyright (C) 2010 - 2013 Alfred E. Heggestad
  */
-#include <re.h>
-#include <re_h264.h>
-#include <re_h265.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/re_h264.h>
+#include <re/re_h265.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include <libavcodec/avcodec.h>
 #include <libavutil/avutil.h>

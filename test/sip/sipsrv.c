@@ -5,7 +5,7 @@
  */
 #include <string.h>
 #include <time.h>
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include "../test.h"
 #include "sipsrv.h"
@@ -13,7 +13,7 @@
 
 #define DEBUG_MODULE "mock/sipsrv"
 #define DEBUG_LEVEL 5
-#include <re_dbg.h>
+#include <re/re_dbg.h>
 
 
 #define LOCAL_PORT        0

@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2011 Alfred E. Heggestad
  */
-#include <re.h>
+#include <re/re.h>
 #include <baresip.h>
 #include "core.h"
 

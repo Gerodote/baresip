@@ -20,3 +20,4 @@ endif()
 target_include_directories(${PROJECT_NAME} SYSTEM PRIVATE
   ${SPANDSP_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${SPANDSP_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} PRIVATE re)

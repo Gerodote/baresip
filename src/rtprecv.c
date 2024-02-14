@@ -5,8 +5,8 @@
  */
 #include <string.h>
 #include <time.h>
-#include <re_atomic.h>
-#include <re.h>
+#include <re/re_atomic.h>
+#include <re/re.h>
 #include <baresip.h>
 #include "core.h"
 

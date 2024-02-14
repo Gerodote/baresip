@@ -6,8 +6,8 @@
 
 #include <string.h>
 #include <errno.h>
-#include <re.h>
-#include <rem.h>
+#include <re/re.h>
+#include <re/rem.h>
 #include <baresip.h>
 #include <spa/param/audio/raw.h>
 #include <pipewire/pipewire.h>

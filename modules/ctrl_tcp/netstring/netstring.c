@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <math.h>
-#include <re.h>
+#include <re/re.h>
 #include "netstring.h"
 
 
